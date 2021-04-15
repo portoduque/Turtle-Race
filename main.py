@@ -1,5 +1,6 @@
 from turtle import Turtle, Screen
 from layout import Layout
+
 import random
 
 is_race_on = False
@@ -34,16 +35,18 @@ if user_bet:
 # Start race
 while is_race_on:
     for turtle in all_turtle:
-        rand_distance = random.randint(0, 10)
-        turtle.forward(rand_distance)
+        random_distance = random.randint(0, 8)
+        turtle.forward(random_distance)
 
+        # Check if turtle cross the end flag
         if turtle.xcor() > 190:
             is_race_on = False
             winner_color = turtle.pencolor()
 
+            # Check if the user wins
             if user_bet == winner_color:
-                print(f"You've Won. The {winner_color} turtle is the winner")
+                layout.victory(winner_color)
             else:
-                print(f"You've Lost. The {winner_color} turtle is the winner")
+                layout.defeat(winner_color)
 
 screen.exitonclick()
