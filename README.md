@@ -10,7 +10,7 @@ Ready, Set, Go!
 ***
 ## Usage example
 ### You can choose the following turtle colors: red, orange, yellow, green, blue or purple.
-
+![Peek 2021-04-15 18-05](https://user-images.githubusercontent.com/37813839/115130010-133a6d00-9fc2-11eb-9901-3917b330189a.gif)
 ## How to play
 1. [Click Here](https://replit.com/@portoduque/Turtle-Race)
 2. Click on the start button
